@@ -3,3 +3,6 @@
 *.ide
 *.dll
 *.pdb
+*.dll
+.vs/TodoRestApi/v15/.suo
+*.pdb
