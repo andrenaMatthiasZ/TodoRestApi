@@ -15,7 +15,8 @@ namespace TodoRestApi.Controllers
         private readonly TodoContext _context;
 
         public TodoController(TodoContext todoContext)
-        { _context = todoContext;
+        {
+            _context = todoContext;
             if (_context.TodoItems.Count() == 0)
             {
                 _context.TodoItems.Add(new TodoItem { Name = "Item1" });
@@ -34,7 +35,7 @@ namespace TodoRestApi.Controllers
         public IActionResult GetById(long id)
         {
             var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
-            if(item==null)
+            if (item == null)
             {
                 return NotFound();
             }
@@ -44,7 +45,7 @@ namespace TodoRestApi.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] TodoItem item)
         {
-            if(item == null)
+            if (item == null)
             {
                 return BadRequest();
             }
@@ -53,6 +54,28 @@ namespace TodoRestApi.Controllers
             _context.SaveChanges();
 
             return CreatedAtRoute("GetTodo", new { id = item.Id }, item);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(long id, [FromBody] TodoItem item)
+        {
+            if (item == null || item.Id != id)
+            {
+                return BadRequest();
+            }
+
+            var todo = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+            if(todo==null)
+            {
+                return NotFound();
+            }
+
+            todo.IsComplete = item.IsComplete;
+            todo.Name = item.Name;
+
+            _context.TodoItems.Update(todo);
+            _context.SaveChanges();
+            return new NoContentResult();
         }
     }
 }
