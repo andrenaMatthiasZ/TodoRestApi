@@ -9,7 +9,7 @@ using TodoRestApi.Models;
 
 namespace TodoRestApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/todo")]
     public class TodoController : Controller
     {
         private readonly TodoContext _context;
