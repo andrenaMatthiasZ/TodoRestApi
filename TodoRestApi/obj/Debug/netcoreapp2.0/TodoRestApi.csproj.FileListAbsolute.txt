@@ -1,0 +1,10 @@
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\bin\Debug\netcoreapp2.0\TodoRestApi.deps.json
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\bin\Debug\netcoreapp2.0\TodoRestApi.runtimeconfig.json
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\bin\Debug\netcoreapp2.0\TodoRestApi.runtimeconfig.dev.json
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\bin\Debug\netcoreapp2.0\TodoRestApi.dll
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\bin\Debug\netcoreapp2.0\TodoRestApi.pdb
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\obj\Debug\netcoreapp2.0\TodoRestApi.csproj.CoreCompileInputs.cache
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\obj\Debug\netcoreapp2.0\TodoRestApi.AssemblyInfoInputs.cache
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\obj\Debug\netcoreapp2.0\TodoRestApi.AssemblyInfo.cs
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\obj\Debug\netcoreapp2.0\TodoRestApi.dll
+C:\Users\mZeleny\workspace\TodoRestApi\TodoRestApi\obj\Debug\netcoreapp2.0\TodoRestApi.pdb
